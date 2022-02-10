@@ -2,6 +2,7 @@
   position: fixed;
   top: 0;
   left:0;
+  color:aliceblue;
 }
 
 #info {
@@ -14,7 +15,7 @@
 }
 
 #canvas {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
 }
@@ -32,32 +33,20 @@ main {
 
   padding: 100px 0px;
   color: rgb(32, 24, 99);
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Audiowide', sans-serif;
 }
 
 h1 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Audiowide', sans-serif;
   text-align: center;
   color: rgb(221 218 241);
   margin-top: 20%;
   font-size: 5em;
-  text-shadow:
-       3px 3px 0 #000,
-     -1px -1px 0 #000,
-      1px -1px 0 #000,
-      -1px 1px 0 #000,
-       1px 1px 0 #000;
+
 }
 h2 {
   text-align: center;
   color: rgb(221 218 241);
-  /* font-size: em; */
-  text-shadow:
-       3px 3px 0 #000,
-     -1px -1px 0 #000,
-      1px -1px 0 #000,
-      -1px 1px 0 #000,
-       1px 1px 0 #000;
 }
 
 header {
@@ -67,14 +56,15 @@ header {
 blockquote {
   text-align: center;
   color: rgb(0, 0, 0);
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Audiowide', sans-serif;
 }
 
 section {
   width: 60%;
   padding: 20px;
   margin: 200px auto;
-  background-image: linear-gradient(rgba(98, 100, 245, 0.411), rgba(105, 226, 247, 0.349));
+  color:rgb(236, 226, 164);
+  background-image: linear-gradient(rgba(154, 154, 170, 0.411), rgba(241, 212, 114, 0.349));
   box-shadow:
     3px 3px 0 #000,
   -1px -1px 0 #000,
@@ -85,6 +75,9 @@ section {
 
 blockquote {
   margin-bottom: 100px;
+  color: gold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 12px;
 }
 
  #VRButton{ bottom: auto !important; top: 10px; }

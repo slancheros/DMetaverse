@@ -6,29 +6,26 @@ import { VRButton } from 'three/examples/jsm/webxr/VRButton.js';
 
 
 const scene = new THREE.Scene();
-//scene.background = new THREE.Color(0x0B7BE6);
+
 
 scene.background = new THREE.Color(0x081053);
 
 const ambientLight = new THREE.AmbientLight();
-//scene.add(ambientLight);
+
 
 const pointLight1 = new THREE.PointLight(0xF7D607);
-//const pointLight1 = new THREE.PointLight(0xF5F4E0);
-//const pointLight1 = new THREE.PointLight(0xB6C1F2);
+
 pointLight1.position.set(2,-30,2);
 
 const pointLight2 = new THREE.PointLight(0xF5F4E0);
-//const pointLight2 = new THREE.PointLight(0xB6C1F2);
-//const pointLight2 = new THREE.PointLight(0xF7D607);
+
 pointLight2.position.set(5,5,5);
 
 scene.add(pointLight1,pointLight2);
 
 const camera = new THREE.PerspectiveCamera(45,window.innerWidth/window.innerHeight,0.5,1000);
 camera.position.setZ(20);
-//camera.position.set(2.72,1.65,11.86);
-//camera.rotation.set(-0.41,0.47,-2.48);
+
 
 const renderer  = new THREE.WebGLRenderer({
   canvas: document.querySelector('#main-content')
@@ -73,10 +70,7 @@ const animatedMeshes = [crystal, crystal2, sphere];
 
 function animate() {
 	requestAnimationFrame( animate );
-  // Insert animation step transformations here
-  // Such as:
-  //   cube.rotation.x += 0.01;
-  //   cube.rotation.y += 0.01;
+  
   animatedMeshes.map(mesh => mesh.rotation.y += 0.005)
 	renderer.render( scene, camera );
 }
@@ -90,4 +84,6 @@ const moveCamera = () => {
 }
 
 document.body.onscroll = moveCamera;
+
+
 
