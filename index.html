@@ -23,19 +23,27 @@
 
       </section>
 
+
       <section>
-        <h2>Upload Files</h2>
+        <h2>Uploaded Files</h2>
          <div>
-          
-          
-          <!-- Optional: some overlay text to describe the video -->
           <div class="content">
-            <h3>Videos</h3>
-            <p>Like this one can be stored in the decentralized IPFS</p>
-            <video autoplay muted id="myVideo">
-              <source src="https://ipfs.io/ipfs/QmVFkjFK1Q3ZFQ59qmjBhVrpA2nELn8NPNWhsms7wckCu8/" type="video/mp4">
-            </video>
-            <!-- Use a button to pause/play the video with JavaScript -->
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <video autoplay muted id="myVideo">
+                    <source src="https://ipfs.io/ipfs/QmVFkjFK1Q3ZFQ59qmjBhVrpA2nELn8NPNWhsms7wckCu8/" type="video/mp4">
+                  </video>
+                 
+                </div>
+                  <div class="flip-card-back">
+                   This is a video generated with AI: The photo of a person who does not exist with artificial 
+                   voice and processed to move the mouth, according to a given (written) message
+                  </div>
+                
+              </div>
+             
+            </div> 
             <button id="myBtn" onclick="onPause()">Play</button>
             <button id="myMute" onclick="onMute()">Mute</button>
           </div>
